@@ -1,20 +1,19 @@
 <template>
   <div id="app">
-    <h2>hello world</h2>
+    <Header />
   </div>
 </template>
 
 <script>
+import Header from './components/Header';
 
 export default {
   name: 'App',
   components: {
+    Header
   }
 }
 </script>
 
 <style lang="less">
-h2 {
-  background-color: paleturquoise;
-}
 </style>
