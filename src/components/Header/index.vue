@@ -81,7 +81,6 @@
     height: @height;
     line-height: @height;
     .container {
-      background-color: @background_color;
       margin: 0 auto;
       overflow: hidden;
       width: @width;
