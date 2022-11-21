@@ -4,15 +4,19 @@
     <TypeNav />
     <!-- 轮播图 -->
     <ListContainer />
+    <!-- 今日推荐 -->
+    <TodyRecommend />
   </div>
 </template>
 
 <script>
 import ListContainer from '@/pages/Home/ListContainer';
+import TodyRecommend from '@/pages/Home/TodyRecommend';
 
 export default {
   components: {
-    ListContainer
+    ListContainer,
+    TodyRecommend
   }
 }
 </script>

@@ -5,7 +5,7 @@
         <!-- banner轮播图 -->
         <div class="swiper-container">
           <div class="swiper-slide">
-            <img src="https://s2.loli.net/2022/11/21/HIKiDJ2XUx6L85C.png" />
+            <img src="https://s2.loli.net/2022/11/21/HIKiDJ2XUx6L85C.png">
           </div>
           <!-- <div class="swiper-slide">
             <img src="https://s2.loli.net/2022/11/21/9p5hN4eOAg8GSly.png">
@@ -86,7 +86,7 @@
           </li>
         </ul>
         <div class="ads">
-          <img src="https://s2.loli.net/2022/11/21/eqVANkD4FYcEPOl.png" />
+          <img src="https://s2.loli.net/2022/11/21/eqVANkD4FYcEPOl.png">
         </div>
       </div>
     </div>
