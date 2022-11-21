@@ -7,7 +7,7 @@ Vue.config.productionTip = false
 import router from '@/router';
 
 // 引入全局组件
-import TypeNav from '@/pages/Home/TypeNav';
+import TypeNav from '@/pages/ShopHome/TypeNav';
 Vue.component(TypeNav.name, TypeNav);
 
 new Vue({

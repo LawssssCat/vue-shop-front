@@ -8,19 +8,24 @@
     <TodyRecommend />
     <!-- 商品排行 -->
     <ProductRank />
+    <!-- 猜你喜欢 -->
+    <GuessLike />
   </div>
 </template>
 
 <script>
-import ListContainer from '@/pages/Home/ListContainer';
-import TodyRecommend from '@/pages/Home/TodyRecommend';
-import ProductRank from '@/pages/Home/ProductRank';
+import ListContainer from '@/pages/ShopHome/ListContainer';
+import TodyRecommend from '@/pages/ShopHome/TodyRecommend';
+import ProductRank from '@/pages/ShopHome/ProductRank';
+import GuessLike from '@/pages/ShopHome/GuessLike';
 
 export default {
+  name: 'ShopHome',
   components: {
     ListContainer,
     TodyRecommend,
     ProductRank,
+    GuessLike,
   }
 }
 </script>

@@ -113,6 +113,7 @@
 
 <script>
 export default {
+  name: 'ShopFooter',
   computed: {
     isShowFooterList() {
       // 可以根据组件身上的$route获取当前路由的信息，但是不好！

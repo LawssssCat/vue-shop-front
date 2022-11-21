@@ -1,21 +1,21 @@
 <template>
   <div id="app">
-    <Header />
+    <ShopHeader />
     <!-- 路由组件出口 -->
     <router-view />
-    <Footer />
+    <ShopFooter />
   </div>
 </template>
 
 <script>
-import Header from './components/Header';
-import Footer from './components/Footer';
+import ShopHeader from './components/ShopHeader';
+import ShopFooter from './components/ShopFooter';
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Footer,
+    ShopHeader,
+    ShopFooter,
   }
 }
 </script>

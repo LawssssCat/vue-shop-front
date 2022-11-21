@@ -25,6 +25,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'TodyRecommend'
+}
+</script>
+
 <style lang="less" scoped>
 @width: 1200px;
 @back_color: #eaeaea;

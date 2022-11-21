@@ -77,6 +77,7 @@
 
 <script>
 export default {
+  name: 'ShopHeader',
   data() {
     return {
       searchPattern: ''

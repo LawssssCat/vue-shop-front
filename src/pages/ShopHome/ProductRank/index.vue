@@ -110,6 +110,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'ProductRank'
+}
+</script>
+
 <style lang="less" scoped>
 @width: 1200px;
 @main_back_color: #41B883;

@@ -6,11 +6,11 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 // 引入路由组件 
-import Home from '@/pages/Home';
-import Login from '@/pages/Login';
-import Register from '@/pages/Register';
-import Search from '@/pages/Search';
-import Error404 from '@/pages/404';
+import ShopHome from '@/pages/ShopHome';
+import ShopLogin from '@/pages/ShopLogin';
+import ShopRegister from '@/pages/ShopRegister';
+import ShopSearch from '@/pages/ShopSearch';
+import ErrorCode from '@/pages/ErrorCode';
 
 // 重写push方法，避免重复处理错误： Uncaught (in promise) NavigationDuplicated: Avoided redundant navigation to current location: "/search?kw="
 let originPush = VueRouter.prototype.push;
@@ -34,23 +34,23 @@ export default new VueRouter({
     },
     {
       path: '/home',
-      component: Home,
+      component: ShopHome,
       meta: {
         isShowFooterList: true
       }
     },
     {
       path: '/login',
-      component: Login
+      component: ShopLogin
     },
     {
       path: '/register',
-      component: Register
+      component: ShopRegister
     },
     {
       name: 'search',
       path: '/search/:kw?',
-      component: Search,
+      component: ShopSearch,
       meta: {
         isShowFooterList: true
       }
@@ -58,7 +58,7 @@ export default new VueRouter({
     // 重定向，默认跳到首页
     {
       path: '*',
-      component: Error404
+      component: ErrorCode
     }
   ]
 });

@@ -93,6 +93,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'ListContainer'
+}
+</script>
+
 <style lang="less" scoped>
 @width: 1200px;
 @height: 464px;

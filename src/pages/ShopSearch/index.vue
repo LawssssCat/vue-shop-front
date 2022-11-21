@@ -5,3 +5,9 @@
     <h4>query kw: {{ $route.query.kw }}</h4>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'ShopSearch'
+}
+</script>
