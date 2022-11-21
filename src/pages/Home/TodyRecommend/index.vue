@@ -57,7 +57,10 @@
         }
       }
       .banner {
+        width: 20.83%;
         img {
+          width: 100%;
+          height: 100%;
           transition: all 400ms;
           &:hover {
             opacity: 0.8;

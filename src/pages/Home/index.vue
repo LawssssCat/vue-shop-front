@@ -6,17 +6,21 @@
     <ListContainer />
     <!-- 今日推荐 -->
     <TodyRecommend />
+    <!-- 商品排行 -->
+    <ProductRank />
   </div>
 </template>
 
 <script>
 import ListContainer from '@/pages/Home/ListContainer';
 import TodyRecommend from '@/pages/Home/TodyRecommend';
+import ProductRank from '@/pages/Home/ProductRank';
 
 export default {
   components: {
     ListContainer,
-    TodyRecommend
+    TodyRecommend,
+    ProductRank,
   }
 }
 </script>
