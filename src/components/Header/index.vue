@@ -8,14 +8,19 @@
           <p>todo？？？欢迎您!</p>
           <p>
             <span>请</span>
-            <a
-              href="###todo"
+            <router-link
+              to="/login"
               class="login"
-            >登录</a>
-            <a 
-              href="###todo"
+            >
+              <!-- 路由 声明式导航 -->
+              登录
+            </router-link>
+            <router-link
+              to="/register"
               class="register"
-            >免费注册</a>
+            >
+              免费注册
+            </router-link>
           </p>
         </div>
         <div class="typeList">
@@ -33,31 +38,34 @@
     <!-- 头部第二行 搜索区域 -->
     <div class="bottom">
       <h1 class="logoArea">
-        <a
+        <router-link
           class="logo"
           title="todo??????"
-          href="####todo"
+          to="/home"
           target="_blank"
         >
           <img
             src="../../assets/logo.png"
             alt="logo"
           >
-        </a>
+        </router-link>
       </h1>
       <div class="searchArea">
         <form
           action="###todo"
           class="searchForm"
+          @keyup.enter="getSearch"
         >
           <input
             id="autocomplete"
+            v-model="searchPattern"
             type="text"
             class="input-error input-xxlarge"
           >
           <button
             type="button"
             class="sui-btn btn-xlarge btn-danger"
+            @click="getSearch"
           >
             搜索
           </button>
@@ -66,6 +74,33 @@
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      searchPattern: ''
+    }
+  },
+  methods: {
+    getSearch(event) {
+      // 路由传递参数：
+      // 1. 字符串形式
+      // this.$router.push('/search/'+this.searchPattern+'?kw='+this.searchPattern.toUpperCase());
+      // 2. 对象形式
+      this.$router.push({
+        name: 'search',
+        params: {
+          kw: this.searchPattern || undefined
+        },
+        query: {
+          kw: this.searchPattern.toUpperCase()
+        },
+      });
+    }
+  }
+}
+</script>
 
 <style lang="less" scoped>
 @background_color: #eaeaea;

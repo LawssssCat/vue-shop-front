@@ -1,5 +1,7 @@
 # vue-shop-front
 
+商城前端项目
+
 ## Project setup
 ```
 npm install

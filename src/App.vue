@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <Header />
-    <p>hello world</p>
+    <!-- 路由组件出口 -->
+    <router-view></router-view>
     <Footer />
   </div>
 </template>

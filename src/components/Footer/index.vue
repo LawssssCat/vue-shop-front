@@ -3,7 +3,7 @@
   <footer class="footer">
     <div class="container">
       <!-- 底部列表 -->
-      <div class="footerList">
+      <div v-show="isShowFooterList" class="footerList">
         <div class="footerItem">
           <h4>购物指南</h4>
           <ul class="footerItemCon">
@@ -62,6 +62,7 @@
           >
         </div>
       </div>
+      <!-- 底部声明 -->
       <div class="copyright">
         <ul class="helpLink">
           <li>
@@ -106,6 +107,19 @@
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  computed: {
+    isShowFooterList() {
+      // 可以根据组件身上的$route获取当前路由的信息，但是不好！
+      // return this.$route.path==='/home' || this.$route.path==='/search' 
+      // 通过路由元信息进行判断更好
+      return this.$route.meta.isShowFooterList;
+    }
+  }
+}
+</script>
 
 <style lang="less" scoped>
 @background_color: #eaeaea;
