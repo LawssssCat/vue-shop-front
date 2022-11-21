@@ -3,7 +3,10 @@
   <footer class="footer">
     <div class="container">
       <!-- 底部列表 -->
-      <div v-show="isShowFooterList" class="footerList">
+      <div
+        v-show="isShowFooterList"
+        class="footerList"
+      >
         <div class="footerItem">
           <h4>购物指南</h4>
           <ul class="footerItemCon">
@@ -57,7 +60,7 @@
         <div class="footerItem">
           <h4>帮助中心</h4>
           <img
-            src="../../assets/logo.png"
+            src="https://s2.loli.net/2022/11/21/ylmud9a2Gx7eQwT.png"
             alt="helpCenter"
           >
         </div>

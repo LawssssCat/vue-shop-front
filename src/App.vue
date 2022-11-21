@@ -2,7 +2,7 @@
   <div id="app">
     <Header />
     <!-- 路由组件出口 -->
-    <router-view></router-view>
+    <router-view />
     <Footer />
   </div>
 </template>
