@@ -10,6 +10,9 @@
     <ProductRank />
     <!-- 猜你喜欢 -->
     <GuessLike />
+    <!-- 楼层 -->
+    <TypeFloor />
+    <TypeFloor />
   </div>
 </template>
 
@@ -18,6 +21,7 @@ import ListContainer from '@/pages/ShopHome/ListContainer';
 import TodyRecommend from '@/pages/ShopHome/TodyRecommend';
 import ProductRank from '@/pages/ShopHome/ProductRank';
 import GuessLike from '@/pages/ShopHome/GuessLike';
+import TypeFloor from '@/pages/ShopHome/TypeFloor';
 
 export default {
   name: 'ShopHome',
@@ -26,6 +30,7 @@ export default {
     TodyRecommend,
     ProductRank,
     GuessLike,
+    TypeFloor,
   }
 }
 </script>
