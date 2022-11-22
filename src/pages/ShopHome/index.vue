@@ -13,6 +13,8 @@
     <!-- 楼层 -->
     <TypeFloor />
     <TypeFloor />
+    <!-- 商标 -->
+    <MerchantBrand />
   </div>
 </template>
 
@@ -22,6 +24,7 @@ import TodyRecommend from '@/pages/ShopHome/TodyRecommend';
 import ProductRank from '@/pages/ShopHome/ProductRank';
 import GuessLike from '@/pages/ShopHome/GuessLike';
 import TypeFloor from '@/pages/ShopHome/TypeFloor';
+import MerchantBrand from '@/pages/ShopHome/MerchantBrand';
 
 export default {
   name: 'ShopHome',
@@ -31,6 +34,7 @@ export default {
     ProductRank,
     GuessLike,
     TypeFloor,
+    MerchantBrand,
   }
 }
 </script>
